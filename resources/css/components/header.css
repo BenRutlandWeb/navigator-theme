@@ -1,0 +1,11 @@
+header {
+    background-color: var(--header-background-color);
+    position: sticky;
+    inset-block-start: var(--wp-admin--admin-bar--height, 0);
+    border-block-end: 1px solid var(--wp--preset--color--canvastext);
+    line-height: 1;
+
+    @media screen and (max-width: 600px) {
+        inset-block-start: 0;
+    }
+}

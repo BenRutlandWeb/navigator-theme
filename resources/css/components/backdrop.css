@@ -1,0 +1,22 @@
+[backdrop]::backdrop {
+    background: light-dark(oklch(from var(--wp--preset--color--black) l c h / 25%), oklch(from var(--wp--preset--color--black) l c h / 75%));
+    opacity: 0;
+    transition:
+        opacity var(--backdrop--transition-speed, 0s),
+        overlay var(--backdrop--transition-speed, 0s) allow-discrete,
+        display var(--backdrop--transition-speed, 0s) allow-discrete;
+}
+
+[backdrop][popover]:popover-open::backdrop,
+[backdrop][open]::backdrop {
+    opacity: 1;
+}
+
+/* Nesting (&) is not supported for pseudo-elements so specify a standalone starting-style block. */
+@starting-style {
+
+    [backdrop][popover]:popover-open::backdrop,
+    [backdrop][open]::backdrop {
+        opacity: 0;
+    }
+}

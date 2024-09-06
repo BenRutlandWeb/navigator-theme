@@ -1,0 +1,104 @@
+@layer base, components, utilities;
+
+@import "reset.css" layer(base);
+
+@import "components/backdrop.css" layer(components);
+@import "components/body.css" layer(components);
+@import "components/dialog.css" layer(components);
+@import "components/footer.css" layer(components);
+@import "components/header.css" layer(components);
+@import "components/icon.css" layer(components);
+@import "components/main.css" layer(components);
+
+@import "utilities.css" layer(utilities);
+
+@layer theme {
+    :root {
+        accent-color: var(--wp--preset--color--accent);
+
+        color-scheme: light dark;
+
+        &:has(.color-scheme-light) {
+            color-scheme: only light;
+        }
+
+        &:has(.color-scheme-dark) {
+            color-scheme: only dark;
+        }
+    }
+}
+
+aside {
+    position: fixed;
+    inset: var(--wp-admin--admin-bar--height, 0) auto 0 0;
+    height: calc(100dvh - var(--wp-admin--admin-bar--height, 0px));
+    padding: 0;
+    border: 0;
+    border-inline-end: 1px solid var(--wp--preset--color--canvastext);
+    width: min(100%, 20rem);
+    scrollbar-width: none;
+    translate: -100%;
+    transition:
+        translate var(--aside--transition-speed, 0s),
+        overlay var(--aside--transition-speed, 0s) allow-discrete,
+        display var(--aside--transition-speed, 0s) allow-discrete;
+
+    &:popover-open {
+        translate: 0;
+
+        @starting-style {
+            translate: -100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        inset-block-start: 0;
+        height: 100dvh;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        --aside--transition-speed: 0.35s;
+        --backdrop--transition-speed: 0.35s;
+    }
+
+    & nav {
+        padding-block: 0.5rem;
+    }
+}
+
+aside-header {
+    justify-content: end;
+    border-block-end: 1px solid var(--wp--preset--color--canvastext);
+}
+
+.menu {
+    list-style: '';
+    margin: 0;
+    padding: 0;
+
+    & a {
+        display: block;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}
+
+@layer components {
+    svg {
+        display: block;
+    }
+}
+
+:where(input).screen-reader-text:focus {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    padding: 0;
+    width: 1px;
+}
+
+input[type="radio"]:checked + label {
+    color: var(--wp--preset--color--accent);
+}

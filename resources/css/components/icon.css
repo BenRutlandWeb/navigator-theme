@@ -1,0 +1,8 @@
+.icon {
+    font-size: 1.5rem;
+}
+
+button:has(.icon) {
+    line-height: 0;
+    padding: 0.5rem;
+}

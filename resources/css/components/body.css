@@ -1,0 +1,5 @@
+body {
+    min-height: calc(100dvh - var(--wp-admin--admin-bar--height, 0px));
+    display: flex;
+    flex-direction: column;
+}

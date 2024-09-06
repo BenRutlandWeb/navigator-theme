@@ -1,0 +1,40 @@
+dialog {
+
+    background: var(--wp--preset--color--canvas);
+    border: 1px solid var(--wp--preset--color--canvastext);
+    border-radius: 0.25rem;
+    padding: 0;
+    margin: auto !important;
+    width: min(100%, 32rem);
+    translate: 0 50%;
+    opacity: 0;
+    transition:
+        translate var(--dialog--transition-speed, 0s),
+        opacity var(--dialog--transition-speed, 0s),
+        overlay var(--dialog--transition-speed, 0s) allow-discrete,
+        display var(--dialog--transition-speed, 0s) allow-discrete;
+
+    &:popover-open,
+    &[open] {
+        translate: 0;
+        opacity: 1;
+
+        @starting-style {
+            translate: 0 50%;
+            opacity: 0;
+        }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        --dialog--transition-speed: 0.25s;
+        --backdrop--transition-speed: 0.25s;
+    }
+}
+
+dialog-header {
+    border-block-end: 1px solid var(--wp--preset--color--canvastext);
+}
+
+dialog-main {
+    display: block;
+}

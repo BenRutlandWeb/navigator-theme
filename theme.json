@@ -1,0 +1,331 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "title": "Navigator theme",
+    "description": "Navigator theme JSON file for setting the theme options.",
+    "slug": "navigator-theme",
+    "settings": {
+        "appearanceTools": true,
+        "background": {
+            "backgroundImage": false,
+            "backgroundSize": false
+        },
+        "blocks": {
+            "core/button": {
+                "border": {
+                    "radius": false
+                }
+            }
+        },
+        "dimensions": {
+            "minHeight": false,
+            "defaultAspectRatios": false,
+            "aspectRatio": true,
+            "aspectRatios": [
+                {
+                    "name": "16:9",
+                    "ratio": "16 / 9",
+                    "slug": "16-9"
+                }
+            ]
+        },
+        "lightbox": {
+            "allowEditing": false,
+            "enabled": true
+        },
+        "position": {
+            "sticky": false
+        },
+        "shadow": {
+            "defaultPresets": false,
+            "presets": [
+                {
+                    "name": "shadow",
+                    "shadow": "0 0 1rem var(--wp--preset--color--dark)",
+                    "slug": "shadow"
+                }
+            ]
+        },
+        "border": {
+            "color": false,
+            "radius": false,
+            "style": false,
+            "width": false
+        },
+        "typography": {
+            "customFontSize": false,
+            "defaultFontSizes": false,
+            "dropCap": false,
+            "fluid": {
+                "minFontSize": "0.75rem",
+                "minViewportWidth": "960px",
+                "maxViewportWidth": "1280px"
+            },
+            "fontFamilies": [
+                {
+                    "name": "Serif",
+                    "slug": "serif",
+                    "fontFamily": "\"Noto Serif\", serif",
+                    "fontFace": [
+                        {
+                            "src": [
+                                "https://fonts.gstatic.com/s/notoserif/v23/ga6Kaw1J5X9T9RW6j9bNfFImajC7.woff2"
+                            ],
+                            "fontFamily": "\"Noto Serif\", serif",
+                            "fontDisplay": "swap",
+                            "fontStyle": "italic",
+                            "fontWeight": "100 900",
+                            "fontVariationSettings": "\"wdth\" 100"
+                        },
+                        {
+                            "src": [
+                                "local('Noto Serif')",
+                                "https://fonts.gstatic.com/s/notoserif/v23/ga6Iaw1J5X9T9RW6j9bNfFcWaA.woff2"
+                            ],
+                            "fontFamily": "\"Noto Serif\", serif",
+                            "fontDisplay": "swap",
+                            "fontStyle": "normal",
+                            "fontWeight": "100 900",
+                            "fontVariationSettings": "\"wdth\" 100"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sans",
+                    "slug": "sans",
+                    "fontFamily": "\"Noto Sans\", sans-serif",
+                    "fontFace": [
+                        {
+                            "src": "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap",
+                            "fontFamily": "\"Noto Sans\", sans-serif",
+                            "fontDisplay": "swap",
+                            "fontWeight": "100 900",
+                            "fontVariationSettings": "\"wdth\" 100"
+                        }
+                    ]
+                },
+                {
+                    "name": "Mono",
+                    "slug": "mono",
+                    "fontFamily": "\"Noto Sans Mono\", monospace",
+                    "fontFace": [
+                        {
+                            "src": "https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wdth,wght@62.5..100,100..900&display=swap",
+                            "fontFamily": "\"Noto Sans Mono\", monospace",
+                            "fontDisplay": "swap",
+                            "fontWeight": "100 900",
+                            "fontVariationSettings": "\"wdth\" 100"
+                        }
+                    ]
+                }
+            ],
+            "fontSizes": [
+                {
+                    "fluid": {
+                        "min": "0.75rem",
+                        "max": "1rem"
+                    },
+                    "name": "Extra small",
+                    "size": "1rem",
+                    "slug": "xs"
+                },
+                {
+                    "fluid": {
+                        "min": "1rem",
+                        "max": "1.25rem"
+                    },
+                    "name": "Small",
+                    "size": "1.25rem",
+                    "slug": "sm"
+                },
+                {
+                    "fluid": {
+                        "min": "1.25rem",
+                        "max": "1.5rem"
+                    },
+                    "name": "Medium",
+                    "size": "1.5rem",
+                    "slug": "md"
+                },
+                {
+                    "fluid": {
+                        "min": "1.5rem",
+                        "max": "2rem"
+                    },
+                    "name": "Large",
+                    "size": "2rem",
+                    "slug": "lg"
+                },
+                {
+                    "fluid": {
+                        "min": "2rem",
+                        "max": "3rem"
+                    },
+                    "name": "Extra large",
+                    "size": "3rem",
+                    "slug": "xl"
+                }
+            ],
+            "fontStyle": false,
+            "fontWeight": false,
+            "letterSpacing": false,
+            "lineHeight": false,
+            "textAlign": false,
+            "textColumns": false,
+            "textDecoration": false,
+            "textTransform": false,
+            "writingMode": false
+        },
+        "color": {
+            "customDuotone": false,
+            "customGradient": false,
+            "defaultDuotone": false,
+            "defaultGradients": false,
+            "defaultPalette": false,
+            "duotone": [],
+            "custom": false,
+            "gradients": [],
+            "background": true,
+            "text": true,
+            "button": true,
+            "caption": true,
+            "heading": true,
+            "link": true,
+            "palette": [
+                {
+                    "name": "black",
+                    "color": "black",
+                    "slug": "black"
+                },
+                {
+                    "name": "white",
+                    "color": "white",
+                    "slug": "white"
+                },
+                {
+                    "name": "accent",
+                    "color": "light-dark(red, purple)",
+                    "slug": "accent"
+                },
+                {
+                    "name": "dark",
+                    "color": "light-dark(darkblue, darkblue)",
+                    "slug": "dark"
+                },
+                {
+                    "name": "canvas",
+                    "color": "light-dark(var(--wp--preset--color--white), var(--wp--preset--color--black))",
+                    "slug": "canvas"
+                },
+                {
+                    "name": "canvas text",
+                    "color": "light-dark(var(--wp--preset--color--black), var(--wp--preset--color--white))",
+                    "slug": "canvastext"
+                }
+            ]
+        },
+        "layout": {
+            "allowCustomContentAndWideSize": false,
+            "allowEditing": false,
+            "contentSize": "960px",
+            "wideSize": "1280px"
+        },
+        "spacing": {
+            "blockGap": true,
+            "customSpacingSize": false,
+            "margin": false,
+            "padding": false,
+            "defaultSpacingSizes": false,
+            "spacingSizes": [
+                {
+                    "name": "Extra small",
+                    "size": "0.5rem",
+                    "slug": "xs"
+                },
+                {
+                    "name": "Small",
+                    "size": "1rem",
+                    "slug": "sm"
+                },
+                {
+                    "name": "Medium",
+                    "size": "1.5rem",
+                    "slug": "md"
+                },
+                {
+                    "name": "Large",
+                    "size": "2.5rem",
+                    "slug": "lg"
+                },
+                {
+                    "name": "Extra large",
+                    "size": "4rem",
+                    "slug": "xl"
+                }
+            ]
+        },
+        "useRootPaddingAwareAlignments": true
+    },
+    "styles": {
+        "color": {
+            "text": "var(--wp--preset--color--canvastext)",
+            "background": "var(--wp--preset--color--canvas)"
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--sans)",
+            "fontSize": "var(--wp--preset--font-size--sm)"
+        },
+        "spacing": {
+            "blockGap": "var(--wp--preset--spacing--sm)",
+            "padding": {
+                "left": "var(--wp--preset--spacing--sm)",
+                "right": "var(--wp--preset--spacing--sm)"
+            }
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--mono)"
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--xl)"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--lg)"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--md)"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--sm)"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--sm)"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--sm)"
+                }
+            },
+            "button": {
+                "border": {
+                    "radius": "0.5rem"
+                }
+            },
+            "caption": {},
+            "cite": {},
+            "link": {}
+        }
+    }
+}

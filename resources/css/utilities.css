@@ -1,0 +1,23 @@
+.has-xs-padding-block {
+    padding-block: var(--wp--preset--spacing--xs);
+}
+
+.has-sm-padding-block {
+    padding-block: var(--wp--preset--spacing--sm);
+}
+
+.has-md-padding-block {
+    padding-block: var(--wp--preset--spacing--md);
+}
+
+.has-lg-padding-block {
+    padding-block: var(--wp--preset--spacing--lg);
+}
+
+.has-xl-padding-block {
+    padding-block: var(--wp--preset--spacing--xl);
+}
+
+:where([hidden]) {
+    display: none;
+}
