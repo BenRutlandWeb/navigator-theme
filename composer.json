@@ -9,7 +9,7 @@
             "email": "ben@10degrees.uk"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
@@ -18,6 +18,20 @@
     },
     "require": {
         "php": "^8.3",
-        "brw/navigator": "dev-main"
+        "brw/navigator": "^0.0"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "wp navigator key:generate"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
     }
 }

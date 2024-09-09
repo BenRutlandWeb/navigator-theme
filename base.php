@@ -1,3 +1,11 @@
+<?php
+
+use Navigator\View\BaseWrapper;
+
+use function Navigator\app;
+use function Navigator\view;
+
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -11,15 +19,15 @@
 
     <?php wp_body_open(); ?>
 
-    <?php echo Navigator\view('header'); ?>
+    <?php echo view('header'); ?>
 
     <main class="is-layout-constrained has-global-padding">
 
-        <?php echo Navigator\app(Navigator\View\BaseWrapper::class)->template(); ?>
+        <?php echo app(BaseWrapper::class)->template(); ?>
 
     </main>
 
-    <?php echo Navigator\view('footer'); ?>
+    <?php echo view('footer'); ?>
 
     <?php wp_footer(); ?>
 </body>

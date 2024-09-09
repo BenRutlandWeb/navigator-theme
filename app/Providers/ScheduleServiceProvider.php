@@ -9,6 +9,6 @@ class ScheduleServiceProvider extends ServiceProvider
 {
     public function schedule(Schedule $schedule): void
     {
-        # $schedule->call(fn() => '')->dailyAt('23:59:59')->timezone('Europe/London');
+        // $schedule->call(fn() => error_log('Hello world!'));
     }
 }
